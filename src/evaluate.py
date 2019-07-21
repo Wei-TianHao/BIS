@@ -106,7 +106,6 @@ def evaluate(model, algorithm, graphics = False, robot = None, save_postfix=None
         #     except SystemExit as e:
         #         pass
 
-
         save_data(save_dir, name.replace('data', 'result'), record)
         for k in robot.score.keys():
             if k not in total_score:
@@ -131,6 +130,14 @@ def evaluate(model, algorithm, graphics = False, robot = None, save_postfix=None
     return total_score
 
 def save_data(folder, name, record):
+    """
+    This function saves the results.
+
+    Args:
+        folder: folder path
+        name: file name
+        record: evaluation result
+    """
     if not os.path.exists(folder):
         os.makedirs(folder)
     f = open(os.path.join(folder, name), 'wb')

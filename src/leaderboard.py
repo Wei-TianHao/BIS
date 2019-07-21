@@ -1,7 +1,8 @@
 from roc_curve import roc_curve
 import numpy as np
-import matplotlib.pyplot as plt
+import matplotlib
 matplotlib.use("TkAgg")
+import matplotlib.pyplot as plt
 def leaderboard():
     """
     This function call evaluate() function to test algorithms on given parameter ranges. Parameter ranges are related to models. The parameters will be grid searched for each algorithms, and generate the roc curve by a convex hull to cover all results on the safety-efficiency plot.

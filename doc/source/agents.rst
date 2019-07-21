@@ -21,14 +21,6 @@ agents.MobileAgent module
    :show-inheritance:
 
 agents.PotentialField module
------------------
-
-.. automodule:: agents.PotentialField
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-agents.PotentialField module
 ----------------------------
 
 .. automodule:: agents.PotentialField
@@ -61,7 +53,7 @@ agents.SublevelSafeSet module
    :show-inheritance:
 
 agents.ZeroingBarrierFunction module
------------------
+------------------------------------
 
 .. automodule:: agents.ZeroingBarrierFunction
    :members:

@@ -25,7 +25,6 @@ src
    roc_curve
    speed_profile
    test
-   tmp
    view_result
    visual_compare
 

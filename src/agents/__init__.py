@@ -5,4 +5,3 @@ from .PotentialField import PotentialField
 from .ZeroingBarrierFunction import ZeroingBarrierFunction
 from .SublevelSafeSet import SublevelSafeSet
 from .Human import Human
-from .PotentialField import PotentialField
