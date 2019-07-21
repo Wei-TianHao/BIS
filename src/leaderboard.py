@@ -1,7 +1,7 @@
 from roc_curve import roc_curve
 import numpy as np
 import matplotlib
-matplotlib.use("TkAgg")
+# matplotlib.use("TkAgg")
 import matplotlib.pyplot as plt
 def leaderboard():
     """
