@@ -14,7 +14,8 @@ import os
 import sys
 import mock
 
-MOCK_MODULES = ['numpy', 'numpy.matlib', 'scipy', 'panda3d', 'cvxopt', 'matplotlib', 'matplotlib.pyplot']
+
+MOCK_MODULES = ['numpy', 'numpy.matlib', 'scipy', 'panda3d', 'cvxopt', 'matplotlib', 'matplotlib.pyplot', 'direct.showbase.ShowBase' ,'panda3d.core' ,'direct.task.Task' ,'direct.gui.OnscreenText' ,'direct.showbase.DirectObject' ,'direct.gui.DirectGui']
 for mod_name in MOCK_MODULES:
     sys.modules[mod_name] = mock.Mock()
     
