@@ -15,9 +15,9 @@ import sys
 import mock
 
 
-MOCK_MODULES = ['numpy', 'numpy.matlib', 'scipy', 'panda3d', 'cvxopt', 'matplotlib', 'matplotlib.pyplot', 'direct.showbase.ShowBase' ,'panda3d.core' ,'direct.task.Task' ,'direct.gui.OnscreenText' ,'direct.showbase.DirectObject' ,'direct.gui.DirectGui']
-for mod_name in MOCK_MODULES:
-    sys.modules[mod_name] = mock.Mock()
+# MOCK_MODULES = ['numpy', 'numpy.matlib', 'scipy', 'panda3d', 'cvxopt', 'matplotlib', 'matplotlib.pyplot', 'direct.showbase.ShowBase' ,'panda3d.core' ,'direct.task.Task' ,'direct.gui.OnscreenText' ,'direct.showbase.DirectObject' ,'direct.gui.DirectGui']
+# for mod_name in MOCK_MODULES:
+#     sys.modules[mod_name] = mock.Mock()
     
 # autodoc_mock_imports = ['numpy', 'scipy', 'panda3d', 'cvxopt', 'matplotlib', 'matplotlib.pyplot']
 
