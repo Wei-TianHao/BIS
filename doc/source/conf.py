@@ -14,11 +14,11 @@ import os
 import sys
 import mock
 
-MOCK_MODULES = ['numpy', 'scipy', 'panda3d', 'cvxopt', 'matplotlib', 'matplotlib.pyplot']
+MOCK_MODULES = ['numpy', 'numpy.matlib', 'scipy', 'panda3d', 'cvxopt', 'matplotlib', 'matplotlib.pyplot']
 for mod_name in MOCK_MODULES:
     sys.modules[mod_name] = mock.Mock()
     
-autodoc_mock_imports = ['numpy', 'scipy', 'panda3d', 'cvxopt', 'matplotlib', 'matplotlib.pyplot']
+# autodoc_mock_imports = ['numpy', 'scipy', 'panda3d', 'cvxopt', 'matplotlib', 'matplotlib.pyplot']
 
 sys.path.insert(0, os.path.abspath('../../src'))
 
