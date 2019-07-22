@@ -7,7 +7,6 @@ def leaderboard():
     """
     This function call evaluate() function to test algorithms on given parameter ranges. Parameter ranges are related to models. The parameters will be grid searched for each algorithms, and generate the roc curve by a convex hull to cover all results on the safety-efficiency plot.
     """
-    print("fuck")
     # models = ['Ball3D']
     # settings = [ \
     #     # ('SlidingMode',      {'d_min': [1, 1.5, 2, 2.5, 3], 'k_v': [1, 1.5, 2], 'u_p': [1, 5, 10]}),\
