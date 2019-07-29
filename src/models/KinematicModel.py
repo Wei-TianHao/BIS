@@ -304,6 +304,8 @@ class KinematicModel:
         self.x_his = np.concatenate([self.x_his[:,1:], self.x],axis=1)
         self.m_his = np.concatenate([self.m_his[:,1:], self.m], axis=1)
 
+# The following functions are required to fill up for new models.
+
     def init_x(self, init_state):
         """
         init state x
@@ -452,6 +454,8 @@ class KinematicModel:
         p_to = p_from + LVector3f(vec[0], vec[1], vec[2])
         vdata.setVertex(0, p_from)
         vdata.setVertex(1, p_to)  
+
+# The following functions are required to fill up for new models.
 
     def load_model(self, render, loader, color=[0.1, 0.5, 0.8, 0.8], scale=0.5):
         """
