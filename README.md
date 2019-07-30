@@ -6,23 +6,13 @@ BIS is an open source benchmark for safe control algorithms.
 
 You can evaluate your algorithm on various robot models, including ball model, unicycle model, robot arm model, etc. 
 
-![models](docs/images/models.jpg)
-
-
-
 We also provide comparison with different algorithms. Currently implemented algorithms including Potential Field method, Safe Set algorithm, Sliding Model algorithm, Barrier Function algorithm, and Sublevel Safe Set algorithm. 
-
-![phase](docs/images/phase.jpg)
 
 Various metrics are provided. Numerical analysis like Safety-Efficiency trade-off curves and Speed profile.
 
 ![passive_results](docs/images/passive_results.jpg)
 
-![speed_profile](docs/images/speed_profile.jpg)
-
-
-
-We also provided visual comparison tools.
+We also provide visual comparison tools.
 
 ![visual_comparison](docs/images/visual_comparison.jpg)
 
