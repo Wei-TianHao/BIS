@@ -1,0 +1,513 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>agents package &mdash; BIS 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="draw_curve module" href="draw_curve.html" />
+    <link rel="prev" title="Welcome to BIS’s documentation!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> BIS
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">agents package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-agents.Human">agents.Human module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-agents.MobileAgent">agents.MobileAgent module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-agents.PotentialField">agents.PotentialField module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-agents.SafeSet">agents.SafeSet module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-agents.SlidingMode">agents.SlidingMode module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-agents.SublevelSafeSet">agents.SublevelSafeSet module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-agents.ZeroingBarrierFunction">agents.ZeroingBarrierFunction module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-agents">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="draw_curve.html">draw_curve module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="evaluate.html">evaluate module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generate_data.html">generate_data module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="leaderboard.html">leaderboard module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="models.html">models package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="roc_curve.html">roc_curve module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="speed_profile.html">speed_profile module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="test.html">test module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tmp.html">tmp module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="view_result.html">view_result module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="visual_compare.html">visual_compare module</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">BIS</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>agents package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/agents.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="agents-package">
+<h1>agents package<a class="headerlink" href="#agents-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-agents.Human">
+<span id="agents-human-module"></span><h2>agents.Human module<a class="headerlink" href="#module-agents.Human" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="agents.Human.Human">
+<em class="property">class </em><code class="sig-prename descclassname">agents.Human.</code><code class="sig-name descname">Human</code><a class="headerlink" href="#agents.Human.Human" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#agents.MobileAgent.MobileAgent" title="agents.MobileAgent.MobileAgent"><code class="xref py py-class docutils literal notranslate"><span class="pre">agents.MobileAgent.MobileAgent</span></code></a></p>
+<dl class="method">
+<dt id="agents.Human.Human.calc_control_input">
+<code class="sig-name descname">calc_control_input</code><span class="sig-paren">(</span><em class="sig-param">dT</em>, <em class="sig-param">goal</em>, <em class="sig-param">fx</em>, <em class="sig-param">fu</em>, <em class="sig-param">Xr</em>, <em class="sig-param">Xh</em>, <em class="sig-param">dot_Xr</em>, <em class="sig-param">dot_Xh</em>, <em class="sig-param">Mr</em>, <em class="sig-param">Mh</em>, <em class="sig-param">p_Mr_p_Xr</em>, <em class="sig-param">p_Mh_p_Xh</em>, <em class="sig-param">u0</em>, <em class="sig-param">min_u</em>, <em class="sig-param">max_u</em><span class="sig-paren">)</span><a class="headerlink" href="#agents.Human.Human.calc_control_input" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function return a control input based on internal state and obstacle information</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dT</strong> (<em>float</em>) – dT</p></li>
+<li><p><strong>goal</strong> (<em>ndarray</em>) – [x; y; z; 0; 0; 0]</p></li>
+<li><p><strong>fx</strong> (<em>ndarray</em>) – transition matrix</p></li>
+<li><p><strong>fu</strong> (<em>ndarray</em>) – transition matrix</p></li>
+<li><p><strong>Xr</strong> (<em>ndarray</em>) – estimate state of robot</p></li>
+<li><p><strong>Xh</strong> (<em>ndarray</em>) – estimate state of obstacle</p></li>
+<li><p><strong>dot_Xr</strong> (<em>ndarray</em>) – estimate gradient of robot state</p></li>
+<li><p><strong>dot_Xh</strong> (<em>ndarray</em>) – estimate gradient of obstacle state</p></li>
+<li><p><strong>Mr</strong> (<em>ndarray</em>) – cartesian position and velocity of the nearest point from robot to obstacle</p></li>
+<li><p><strong>Mh</strong> (<em>ndarray</em>) – cartesian position and velocity of the nearest point from obstacle to robot</p></li>
+<li><p><strong>p_Mr_p_Xr</strong> (<em>ndarray</em>) – derivative of robot cartesian state to internal state</p></li>
+<li><p><strong>p_Mh_p_Xh</strong> (<em>ndarray</em>) – derivative of obstacle cartesian state to internal state</p></li>
+<li><p><strong>u0</strong> (<em>ndarray</em>) – reference control input, this is the default control input if there is no obstacle</p></li>
+<li><p><strong>min_u</strong> (<em>ndarray</em>) – control input saturation</p></li>
+<li><p><strong>max_u</strong> (<em>ndarray</em>) – control input saturation</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="agents.Human.Human.d_min">
+<code class="sig-name descname">d_min</code><em class="property"> = 2</em><a class="headerlink" href="#agents.Human.Human.d_min" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="agents.Human.Human.half_plane_ABC">
+<code class="sig-name descname">half_plane_ABC</code><em class="property"> = []</em><a class="headerlink" href="#agents.Human.Human.half_plane_ABC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="agents.Human.Human.k_v">
+<code class="sig-name descname">k_v</code><em class="property"> = 2</em><a class="headerlink" href="#agents.Human.Human.k_v" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="agents.Human.Human.lambd">
+<code class="sig-name descname">lambd</code><em class="property"> = 0.5</em><a class="headerlink" href="#agents.Human.Human.lambd" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="agents.Human.Human.yita">
+<code class="sig-name descname">yita</code><em class="property"> = 2</em><a class="headerlink" href="#agents.Human.Human.yita" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-agents.MobileAgent">
+<span id="agents-mobileagent-module"></span><h2>agents.MobileAgent module<a class="headerlink" href="#module-agents.MobileAgent" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="agents.MobileAgent.MobileAgent">
+<em class="property">class </em><code class="sig-prename descclassname">agents.MobileAgent.</code><code class="sig-name descname">MobileAgent</code><a class="headerlink" href="#agents.MobileAgent.MobileAgent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>This is the base class for algorithms. We assume all the algorithms use relative cartesian position and velocity to evaluate current safety index.</p>
+<dl class="method">
+<dt id="agents.MobileAgent.MobileAgent.calc_control_input">
+<code class="sig-name descname">calc_control_input</code><span class="sig-paren">(</span><em class="sig-param">dT</em>, <em class="sig-param">goal</em>, <em class="sig-param">fx</em>, <em class="sig-param">fu</em>, <em class="sig-param">Xr</em>, <em class="sig-param">Xh</em>, <em class="sig-param">dot_Xr</em>, <em class="sig-param">dot_Xh</em>, <em class="sig-param">Mr</em>, <em class="sig-param">Mh</em>, <em class="sig-param">p_Mr_p_Xr</em>, <em class="sig-param">p_Mh_p_Xh</em>, <em class="sig-param">u0</em>, <em class="sig-param">min_u</em>, <em class="sig-param">max_u</em><span class="sig-paren">)</span><a class="headerlink" href="#agents.MobileAgent.MobileAgent.calc_control_input" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function return a control input based on internal state and obstacle information</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dT</strong> (<em>float</em>) – dT</p></li>
+<li><p><strong>goal</strong> (<em>ndarray</em>) – [x; y; z; 0; 0; 0]</p></li>
+<li><p><strong>fx</strong> (<em>ndarray</em>) – transition matrix</p></li>
+<li><p><strong>fu</strong> (<em>ndarray</em>) – transition matrix</p></li>
+<li><p><strong>Xr</strong> (<em>ndarray</em>) – estimate state of robot</p></li>
+<li><p><strong>Xh</strong> (<em>ndarray</em>) – estimate state of obstacle</p></li>
+<li><p><strong>dot_Xr</strong> (<em>ndarray</em>) – estimate gradient of robot state</p></li>
+<li><p><strong>dot_Xh</strong> (<em>ndarray</em>) – estimate gradient of obstacle state</p></li>
+<li><p><strong>Mr</strong> (<em>ndarray</em>) – cartesian position and velocity of the nearest point from robot to obstacle</p></li>
+<li><p><strong>Mh</strong> (<em>ndarray</em>) – cartesian position and velocity of the nearest point from obstacle to robot</p></li>
+<li><p><strong>p_Mr_p_Xr</strong> (<em>ndarray</em>) – derivative of robot cartesian state to internal state</p></li>
+<li><p><strong>p_Mh_p_Xh</strong> (<em>ndarray</em>) – derivative of obstacle cartesian state to internal state</p></li>
+<li><p><strong>u0</strong> (<em>ndarray</em>) – reference control input, this is the default control input if there is no obstacle</p></li>
+<li><p><strong>min_u</strong> (<em>ndarray</em>) – control input saturation</p></li>
+<li><p><strong>max_u</strong> (<em>ndarray</em>) – control input saturation</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-agents.PotentialField">
+<span id="agents-potentialfield-module"></span><h2>agents.PotentialField module<a class="headerlink" href="#module-agents.PotentialField" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="agents.PotentialField.PotentialField">
+<em class="property">class </em><code class="sig-prename descclassname">agents.PotentialField.</code><code class="sig-name descname">PotentialField</code><a class="headerlink" href="#agents.PotentialField.PotentialField" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#agents.MobileAgent.MobileAgent" title="agents.MobileAgent.MobileAgent"><code class="xref py py-class docutils literal notranslate"><span class="pre">agents.MobileAgent.MobileAgent</span></code></a></p>
+<p>Potential field method. This method is inspired from gravity potential field.</p>
+<dl class="method">
+<dt id="agents.PotentialField.PotentialField.calc_control_input">
+<code class="sig-name descname">calc_control_input</code><span class="sig-paren">(</span><em class="sig-param">dT</em>, <em class="sig-param">goal</em>, <em class="sig-param">fx</em>, <em class="sig-param">fu</em>, <em class="sig-param">Xr</em>, <em class="sig-param">Xh</em>, <em class="sig-param">dot_Xr</em>, <em class="sig-param">dot_Xh</em>, <em class="sig-param">Mr</em>, <em class="sig-param">Mh</em>, <em class="sig-param">p_Mr_p_Xr</em>, <em class="sig-param">p_Mh_p_Xh</em>, <em class="sig-param">u0</em>, <em class="sig-param">min_u</em>, <em class="sig-param">max_u</em><span class="sig-paren">)</span><a class="headerlink" href="#agents.PotentialField.PotentialField.calc_control_input" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function return a control input based on internal state and obstacle information</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dT</strong> (<em>float</em>) – dT</p></li>
+<li><p><strong>goal</strong> (<em>ndarray</em>) – [x; y; z; 0; 0; 0]</p></li>
+<li><p><strong>fx</strong> (<em>ndarray</em>) – transition matrix</p></li>
+<li><p><strong>fu</strong> (<em>ndarray</em>) – transition matrix</p></li>
+<li><p><strong>Xr</strong> (<em>ndarray</em>) – estimate state of robot</p></li>
+<li><p><strong>Xh</strong> (<em>ndarray</em>) – estimate state of obstacle</p></li>
+<li><p><strong>dot_Xr</strong> (<em>ndarray</em>) – estimate gradient of robot state</p></li>
+<li><p><strong>dot_Xh</strong> (<em>ndarray</em>) – estimate gradient of obstacle state</p></li>
+<li><p><strong>Mr</strong> (<em>ndarray</em>) – cartesian position and velocity of the nearest point from robot to obstacle</p></li>
+<li><p><strong>Mh</strong> (<em>ndarray</em>) – cartesian position and velocity of the nearest point from obstacle to robot</p></li>
+<li><p><strong>p_Mr_p_Xr</strong> (<em>ndarray</em>) – derivative of robot cartesian state to internal state</p></li>
+<li><p><strong>p_Mh_p_Xh</strong> (<em>ndarray</em>) – derivative of obstacle cartesian state to internal state</p></li>
+<li><p><strong>u0</strong> (<em>ndarray</em>) – reference control input, this is the default control input if there is no obstacle</p></li>
+<li><p><strong>min_u</strong> (<em>ndarray</em>) – control input saturation</p></li>
+<li><p><strong>max_u</strong> (<em>ndarray</em>) – control input saturation</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-agents.SafeSet">
+<span id="agents-safeset-module"></span><h2>agents.SafeSet module<a class="headerlink" href="#module-agents.SafeSet" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="agents.SafeSet.SafeSet">
+<em class="property">class </em><code class="sig-prename descclassname">agents.SafeSet.</code><code class="sig-name descname">SafeSet</code><span class="sig-paren">(</span><em class="sig-param">d_min=2</em>, <em class="sig-param">k_v=2</em>, <em class="sig-param">yita=10</em><span class="sig-paren">)</span><a class="headerlink" href="#agents.SafeSet.SafeSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#agents.MobileAgent.MobileAgent" title="agents.MobileAgent.MobileAgent"><code class="xref py py-class docutils literal notranslate"><span class="pre">agents.MobileAgent.MobileAgent</span></code></a></p>
+<p>This is the Safe Set method. Please refer to the paper for details.</p>
+<dl class="method">
+<dt id="agents.SafeSet.SafeSet.calc_control_input">
+<code class="sig-name descname">calc_control_input</code><span class="sig-paren">(</span><em class="sig-param">dT</em>, <em class="sig-param">goal</em>, <em class="sig-param">fx</em>, <em class="sig-param">fu</em>, <em class="sig-param">Xr</em>, <em class="sig-param">Xh</em>, <em class="sig-param">dot_Xr</em>, <em class="sig-param">dot_Xh</em>, <em class="sig-param">Mr</em>, <em class="sig-param">Mh</em>, <em class="sig-param">p_Mr_p_Xr</em>, <em class="sig-param">p_Mh_p_Xh</em>, <em class="sig-param">u0</em>, <em class="sig-param">min_u</em>, <em class="sig-param">max_u</em><span class="sig-paren">)</span><a class="headerlink" href="#agents.SafeSet.SafeSet.calc_control_input" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function return a control input based on internal state and obstacle information</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dT</strong> (<em>float</em>) – dT</p></li>
+<li><p><strong>goal</strong> (<em>ndarray</em>) – [x; y; z; 0; 0; 0]</p></li>
+<li><p><strong>fx</strong> (<em>ndarray</em>) – transition matrix</p></li>
+<li><p><strong>fu</strong> (<em>ndarray</em>) – transition matrix</p></li>
+<li><p><strong>Xr</strong> (<em>ndarray</em>) – estimate state of robot</p></li>
+<li><p><strong>Xh</strong> (<em>ndarray</em>) – estimate state of obstacle</p></li>
+<li><p><strong>dot_Xr</strong> (<em>ndarray</em>) – estimate gradient of robot state</p></li>
+<li><p><strong>dot_Xh</strong> (<em>ndarray</em>) – estimate gradient of obstacle state</p></li>
+<li><p><strong>Mr</strong> (<em>ndarray</em>) – cartesian position and velocity of the nearest point from robot to obstacle</p></li>
+<li><p><strong>Mh</strong> (<em>ndarray</em>) – cartesian position and velocity of the nearest point from obstacle to robot</p></li>
+<li><p><strong>p_Mr_p_Xr</strong> (<em>ndarray</em>) – derivative of robot cartesian state to internal state</p></li>
+<li><p><strong>p_Mh_p_Xh</strong> (<em>ndarray</em>) – derivative of obstacle cartesian state to internal state</p></li>
+<li><p><strong>u0</strong> (<em>ndarray</em>) – reference control input, this is the default control input if there is no obstacle</p></li>
+<li><p><strong>min_u</strong> (<em>ndarray</em>) – control input saturation</p></li>
+<li><p><strong>max_u</strong> (<em>ndarray</em>) – control input saturation</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-agents.SlidingMode">
+<span id="agents-slidingmode-module"></span><h2>agents.SlidingMode module<a class="headerlink" href="#module-agents.SlidingMode" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="agents.SlidingMode.SlidingMode">
+<em class="property">class </em><code class="sig-prename descclassname">agents.SlidingMode.</code><code class="sig-name descname">SlidingMode</code><a class="headerlink" href="#agents.SlidingMode.SlidingMode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#agents.MobileAgent.MobileAgent" title="agents.MobileAgent.MobileAgent"><code class="xref py py-class docutils literal notranslate"><span class="pre">agents.MobileAgent.MobileAgent</span></code></a></p>
+<dl class="method">
+<dt id="agents.SlidingMode.SlidingMode.calc_control_input">
+<code class="sig-name descname">calc_control_input</code><span class="sig-paren">(</span><em class="sig-param">dT</em>, <em class="sig-param">goal</em>, <em class="sig-param">fx</em>, <em class="sig-param">fu</em>, <em class="sig-param">Xr</em>, <em class="sig-param">Xh</em>, <em class="sig-param">dot_Xr</em>, <em class="sig-param">dot_Xh</em>, <em class="sig-param">Mr</em>, <em class="sig-param">Mh</em>, <em class="sig-param">p_Mr_p_Xr</em>, <em class="sig-param">p_Mh_p_Xh</em>, <em class="sig-param">u0</em>, <em class="sig-param">min_u</em>, <em class="sig-param">max_u</em><span class="sig-paren">)</span><a class="headerlink" href="#agents.SlidingMode.SlidingMode.calc_control_input" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function return a control input based on internal state and obstacle information</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dT</strong> (<em>float</em>) – dT</p></li>
+<li><p><strong>goal</strong> (<em>ndarray</em>) – [x; y; z; 0; 0; 0]</p></li>
+<li><p><strong>fx</strong> (<em>ndarray</em>) – transition matrix</p></li>
+<li><p><strong>fu</strong> (<em>ndarray</em>) – transition matrix</p></li>
+<li><p><strong>Xr</strong> (<em>ndarray</em>) – estimate state of robot</p></li>
+<li><p><strong>Xh</strong> (<em>ndarray</em>) – estimate state of obstacle</p></li>
+<li><p><strong>dot_Xr</strong> (<em>ndarray</em>) – estimate gradient of robot state</p></li>
+<li><p><strong>dot_Xh</strong> (<em>ndarray</em>) – estimate gradient of obstacle state</p></li>
+<li><p><strong>Mr</strong> (<em>ndarray</em>) – cartesian position and velocity of the nearest point from robot to obstacle</p></li>
+<li><p><strong>Mh</strong> (<em>ndarray</em>) – cartesian position and velocity of the nearest point from obstacle to robot</p></li>
+<li><p><strong>p_Mr_p_Xr</strong> (<em>ndarray</em>) – derivative of robot cartesian state to internal state</p></li>
+<li><p><strong>p_Mh_p_Xh</strong> (<em>ndarray</em>) – derivative of obstacle cartesian state to internal state</p></li>
+<li><p><strong>u0</strong> (<em>ndarray</em>) – reference control input, this is the default control input if there is no obstacle</p></li>
+<li><p><strong>min_u</strong> (<em>ndarray</em>) – control input saturation</p></li>
+<li><p><strong>max_u</strong> (<em>ndarray</em>) – control input saturation</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-agents.SublevelSafeSet">
+<span id="agents-sublevelsafeset-module"></span><h2>agents.SublevelSafeSet module<a class="headerlink" href="#module-agents.SublevelSafeSet" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="agents.SublevelSafeSet.SublevelSafeSet">
+<em class="property">class </em><code class="sig-prename descclassname">agents.SublevelSafeSet.</code><code class="sig-name descname">SublevelSafeSet</code><span class="sig-paren">(</span><em class="sig-param">d_min=2</em>, <em class="sig-param">k_v=1</em>, <em class="sig-param">gamma=5</em><span class="sig-paren">)</span><a class="headerlink" href="#agents.SublevelSafeSet.SublevelSafeSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#agents.MobileAgent.MobileAgent" title="agents.MobileAgent.MobileAgent"><code class="xref py py-class docutils literal notranslate"><span class="pre">agents.MobileAgent.MobileAgent</span></code></a></p>
+<p>This is the sublevel safeset. Please refer to the paper for details.</p>
+<dl class="method">
+<dt id="agents.SublevelSafeSet.SublevelSafeSet.calc_control_input">
+<code class="sig-name descname">calc_control_input</code><span class="sig-paren">(</span><em class="sig-param">dT</em>, <em class="sig-param">goal</em>, <em class="sig-param">fx</em>, <em class="sig-param">fu</em>, <em class="sig-param">Xr</em>, <em class="sig-param">Xh</em>, <em class="sig-param">dot_Xr</em>, <em class="sig-param">dot_Xh</em>, <em class="sig-param">Mr</em>, <em class="sig-param">Mh</em>, <em class="sig-param">p_Mr_p_Xr</em>, <em class="sig-param">p_Mh_p_Xh</em>, <em class="sig-param">u0</em>, <em class="sig-param">min_u</em>, <em class="sig-param">max_u</em><span class="sig-paren">)</span><a class="headerlink" href="#agents.SublevelSafeSet.SublevelSafeSet.calc_control_input" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function return a control input based on internal state and obstacle information</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dT</strong> (<em>float</em>) – dT</p></li>
+<li><p><strong>goal</strong> (<em>ndarray</em>) – [x; y; z; 0; 0; 0]</p></li>
+<li><p><strong>fx</strong> (<em>ndarray</em>) – transition matrix</p></li>
+<li><p><strong>fu</strong> (<em>ndarray</em>) – transition matrix</p></li>
+<li><p><strong>Xr</strong> (<em>ndarray</em>) – estimate state of robot</p></li>
+<li><p><strong>Xh</strong> (<em>ndarray</em>) – estimate state of obstacle</p></li>
+<li><p><strong>dot_Xr</strong> (<em>ndarray</em>) – estimate gradient of robot state</p></li>
+<li><p><strong>dot_Xh</strong> (<em>ndarray</em>) – estimate gradient of obstacle state</p></li>
+<li><p><strong>Mr</strong> (<em>ndarray</em>) – cartesian position and velocity of the nearest point from robot to obstacle</p></li>
+<li><p><strong>Mh</strong> (<em>ndarray</em>) – cartesian position and velocity of the nearest point from obstacle to robot</p></li>
+<li><p><strong>p_Mr_p_Xr</strong> (<em>ndarray</em>) – derivative of robot cartesian state to internal state</p></li>
+<li><p><strong>p_Mh_p_Xh</strong> (<em>ndarray</em>) – derivative of obstacle cartesian state to internal state</p></li>
+<li><p><strong>u0</strong> (<em>ndarray</em>) – reference control input, this is the default control input if there is no obstacle</p></li>
+<li><p><strong>min_u</strong> (<em>ndarray</em>) – control input saturation</p></li>
+<li><p><strong>max_u</strong> (<em>ndarray</em>) – control input saturation</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-agents.ZeroingBarrierFunction">
+<span id="agents-zeroingbarrierfunction-module"></span><h2>agents.ZeroingBarrierFunction module<a class="headerlink" href="#module-agents.ZeroingBarrierFunction" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="agents.ZeroingBarrierFunction.ZeroingBarrierFunction">
+<em class="property">class </em><code class="sig-prename descclassname">agents.ZeroingBarrierFunction.</code><code class="sig-name descname">ZeroingBarrierFunction</code><span class="sig-paren">(</span><em class="sig-param">d_min=3</em>, <em class="sig-param">t=0.5</em>, <em class="sig-param">gamma=1</em><span class="sig-paren">)</span><a class="headerlink" href="#agents.ZeroingBarrierFunction.ZeroingBarrierFunction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#agents.MobileAgent.MobileAgent" title="agents.MobileAgent.MobileAgent"><code class="xref py py-class docutils literal notranslate"><span class="pre">agents.MobileAgent.MobileAgent</span></code></a></p>
+<p>This is the Zeroing Barrier Function method. Please refer to the paper for details.</p>
+<dl class="method">
+<dt id="agents.ZeroingBarrierFunction.ZeroingBarrierFunction.calc_control_input">
+<code class="sig-name descname">calc_control_input</code><span class="sig-paren">(</span><em class="sig-param">dT</em>, <em class="sig-param">goal</em>, <em class="sig-param">fx</em>, <em class="sig-param">fu</em>, <em class="sig-param">Xr</em>, <em class="sig-param">Xh</em>, <em class="sig-param">dot_Xr</em>, <em class="sig-param">dot_Xh</em>, <em class="sig-param">Mr</em>, <em class="sig-param">Mh</em>, <em class="sig-param">p_Mr_p_Xr</em>, <em class="sig-param">p_Mh_p_Xh</em>, <em class="sig-param">u0</em>, <em class="sig-param">min_u</em>, <em class="sig-param">max_u</em><span class="sig-paren">)</span><a class="headerlink" href="#agents.ZeroingBarrierFunction.ZeroingBarrierFunction.calc_control_input" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function return a control input based on internal state and obstacle information</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dT</strong> (<em>float</em>) – dT</p></li>
+<li><p><strong>goal</strong> (<em>ndarray</em>) – [x; y; z; 0; 0; 0]</p></li>
+<li><p><strong>fx</strong> (<em>ndarray</em>) – transition matrix</p></li>
+<li><p><strong>fu</strong> (<em>ndarray</em>) – transition matrix</p></li>
+<li><p><strong>Xr</strong> (<em>ndarray</em>) – estimate state of robot</p></li>
+<li><p><strong>Xh</strong> (<em>ndarray</em>) – estimate state of obstacle</p></li>
+<li><p><strong>dot_Xr</strong> (<em>ndarray</em>) – estimate gradient of robot state</p></li>
+<li><p><strong>dot_Xh</strong> (<em>ndarray</em>) – estimate gradient of obstacle state</p></li>
+<li><p><strong>Mr</strong> (<em>ndarray</em>) – cartesian position and velocity of the nearest point from robot to obstacle</p></li>
+<li><p><strong>Mh</strong> (<em>ndarray</em>) – cartesian position and velocity of the nearest point from obstacle to robot</p></li>
+<li><p><strong>p_Mr_p_Xr</strong> (<em>ndarray</em>) – derivative of robot cartesian state to internal state</p></li>
+<li><p><strong>p_Mh_p_Xh</strong> (<em>ndarray</em>) – derivative of obstacle cartesian state to internal state</p></li>
+<li><p><strong>u0</strong> (<em>ndarray</em>) – reference control input, this is the default control input if there is no obstacle</p></li>
+<li><p><strong>min_u</strong> (<em>ndarray</em>) – control input saturation</p></li>
+<li><p><strong>max_u</strong> (<em>ndarray</em>) – control input saturation</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-agents">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-agents" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="draw_curve.html" class="btn btn-neutral float-right" title="draw_curve module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to BIS’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, WEI Tianhao
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
