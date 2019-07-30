@@ -16,6 +16,10 @@ We also provide visual comparison tools.
 
 ![visual_comparison](docs/images/visual_comparison.jpg)
 
+### Document
+
+Detailed documents of the code can be found at <https://wei-tianhao.github.io/BIS/>.
+
 ### Install
 
 To install this repository:
@@ -48,6 +52,3 @@ To see a demo, please run
 python test.py
 ```
 
-### Document
-
-Detailed documents can be found at <https://wei-tianhao.github.io/BIS/>.
